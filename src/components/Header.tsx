@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="flex items-center absolute z-20 top-0 left-50 md:px-0 px-5 justify-between h-[10vh] w-full">
-      <nav className="flex md:px-[5vw] justify-around w-[25vw] md:w-[20vw]">
+      <nav className="absolute md:left-10 left-5 flex justify-around max-w-screen-lg">
         <motion.span
           initial={{
             opacity: 0,
@@ -32,7 +32,7 @@ const Header = () => {
               duration: 1,
             },
           }}
-          className="md:text-3xl cursor-pointer md:px-3 text-2xl text-white hover:scale-105"
+          className="md:text-3xl cursor-pointer mx-5 text-2xl text-white hover:scale-105"
         >
           <AiOutlineGithub />
         </motion.span>
@@ -57,11 +57,11 @@ const Header = () => {
           </Link>
         </motion.span>
       </nav>
-      <nav className="flex justify-evenly md:w-[25vw] w-[50vw] text-white md:text-xl text-md font-mono font-bold">
+      <nav className="absolute md:right-10 right-5 flex justify-evenly max-w-screen-xl text-white md:text-xl text-md font-mono font-bold">
         <div className=" cursor-pointer hover:underline underline-offset-8 hover:scale-105">
           <Link to="/projects">Projects</Link>
         </div>
-        <div className=" cursor-pointer hover:underline underline-offset-8 hover:scale-105">
+        <div className=" cursor-pointer hover:underline underline-offset-8 md:ml-5 ml-2 hover:scale-105">
           <Link to="/contact_me_section">Contact me</Link>
         </div>
       </nav>
