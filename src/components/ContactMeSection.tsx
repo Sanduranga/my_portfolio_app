@@ -65,7 +65,7 @@ const ContactMeSection = () => {
             },
           }}
           className="md:w-[25vw] md:h-[50vh] hidden md:block bg-gray-400 object-cover rounded-3xl"
-          src="./images/programmer-gif.gif"
+          src="./programmer-gif.gif"
           alt="gif"
         />
 

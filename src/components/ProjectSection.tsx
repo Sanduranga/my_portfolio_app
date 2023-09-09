@@ -30,7 +30,7 @@ const ProjectSection = () => {
     <div className="grid grid-cols-1 absolute w-full bg-gradient-to-t overflow-x-hidden from-gray-100 to-gray-800 justify-center gap-6">
       <Card>
         <img
-          src="./images/e_commerce_ts.jpg"
+          src="./e_commerce_ts.jpg"
           alt="Featured Image 1"
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
@@ -181,9 +181,9 @@ const ProjectSection = () => {
           </div>
         </Discription>
         <img
-          src="./images/framer_motion.jpg"
+          src="./e_commerce.JS.jpg"
           alt="Featured Image 1"
-          className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
+          className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
       </Card>
       <Card>
@@ -246,14 +246,14 @@ const ProjectSection = () => {
           </div>
         </Discription>
         <img
-          src="./images/framer_motion.jpg"
+          src="./framer_motion.jpg"
           alt="Featured Image 1"
           className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
         />
       </Card>
       <Card>
         <img
-          src="./images/todo_app.jpg"
+          src="./todo_app.jpg"
           alt="Featured Image 1"
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
@@ -397,7 +397,7 @@ const ProjectSection = () => {
           </div>
         </Discription>
         <img
-          src="./images/ceylonGuider.jpg"
+          src="./ceylonGuider.jpg"
           alt="Featured Image 1"
           className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
         />
