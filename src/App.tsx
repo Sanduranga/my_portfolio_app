@@ -16,9 +16,8 @@ function App() {
       }}
     >
       <Header />
-
       <Routes>
-        <Route path="/" element={<LandingSection />} />
+        <Route path="/my_portfolio_app" element={<LandingSection />} />
       </Routes>
       <Routes>
         <Route path="/projects" element={<ProjectSection />} />
