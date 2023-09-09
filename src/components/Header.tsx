@@ -32,7 +32,7 @@ const Header = () => {
               duration: 1,
             },
           }}
-          className="md:text-3xl cursor-pointer mx-5 text-2xl text-white hover:scale-105"
+          className="md:text-3xl cursor-pointer mx-3 text-2xl text-white hover:scale-105"
         >
           <AiOutlineGithub />
         </motion.span>
@@ -61,7 +61,7 @@ const Header = () => {
         <div className=" cursor-pointer hover:underline underline-offset-8 hover:scale-105">
           <Link to="/projects">Projects</Link>
         </div>
-        <div className=" cursor-pointer hover:underline underline-offset-8 md:ml-5 ml-2 hover:scale-105">
+        <div className=" cursor-pointer hover:underline underline-offset-8 md:ml-5 ml-3 hover:scale-105">
           <Link to="/contact_me_section">Contact me</Link>
         </div>
       </nav>

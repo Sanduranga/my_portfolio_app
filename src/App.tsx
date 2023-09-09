@@ -7,7 +7,14 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="relative h-screen bg-black">
+    <div
+      className="relative h-screen bg-black"
+      style={{
+        backgroundImage: `url('./images/bg2.jpg')`,
+        backgroundPosition: "top",
+        backgroundSize: "cover",
+      }}
+    >
       <Header />
 
       <Routes>
