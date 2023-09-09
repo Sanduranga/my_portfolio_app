@@ -121,7 +121,9 @@ const ProjectSection = () => {
       <Card>
         <Discription>
           <div className="text-white space-y-4">
-            <h3 className="text-xl font-bold lead-xl bold">E-commerce site</h3>
+            <h3 className="text-xl font-bold lead-xl bold">
+              E-commerce site(js)
+            </h3>
             <div className="text-lg font-light">
               This is a simple e commerce web site(Javasript) using Picsum free
               API images as the items. Also I used Redux createStore to manage
@@ -166,15 +168,12 @@ const ProjectSection = () => {
             <div className="flex flex-col justify-end">
               <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">
                 <a
-                  href="https://github.com/Sanduranga/p8_attractive_homepage"
+                  href="https://github.com/Sanduranga/e_commerce_site_react_redux.git"
                   target="blank"
                 >
                   <BsGithub />
                 </a>
-                <a
-                  href="https://sanduranga.github.io/p8_attractive_homepage/"
-                  target="blank"
-                >
+                <a href="#" target="blank">
                   <FaLink />
                 </a>
               </div>
