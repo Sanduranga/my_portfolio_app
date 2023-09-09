@@ -10,7 +10,7 @@ function App() {
     <div
       className="relative h-screen bg-black"
       style={{
-        backgroundImage: `url('./images/bg2.jpg')`,
+        backgroundImage: `url('./bg2.jpg')`,
         backgroundPosition: "top",
         backgroundSize: "cover",
       }}

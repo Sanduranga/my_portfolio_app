@@ -13,7 +13,7 @@ const LandingSection = () => {
         }}
         className="h-[100vh] blur-xm"
         style={{
-          backgroundImage: `url('./images/bg2.jpg')`,
+          backgroundImage: `url('./bg2.jpg')`,
           backgroundPosition: "top",
           backgroundSize: "cover",
         }}
