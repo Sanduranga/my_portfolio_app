@@ -6,7 +6,7 @@ const LandingSection = () => {
     <div className="absolute left-0 top-0 h-[100vh] z-10 w-full overflow-hidden">
       <motion.div
         animate={{
-          x: [-30, 0, 30, 0, -20, 0, -30, 0, 30, 0, -20, 0],
+          x: [-30, 0, 30, 0],
           transition: {
             duration: 30,
           },
