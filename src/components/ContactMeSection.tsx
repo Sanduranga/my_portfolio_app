@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { AiOutlineMail } from "react-icons/ai";
 import { motion } from "framer-motion";
 import Footer from "./Footer";
-import { Formik, Form, Field, ErrorMessage, useFormikContext } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 const validationSchema = Yup.object().shape({
@@ -14,8 +14,7 @@ const validationSchema = Yup.object().shape({
     .min(25, "Comment must be at least 25 characters"),
 });
 const ContactMeSection = () => {
-  const form = useRef<string>();
-  const formik = useFormikContext<FormValues>();
+  const formRef = useRef<HTMLFormElement | null>(null);
 
   interface FormValues {
     sender_name: string;
@@ -30,24 +29,23 @@ const ContactMeSection = () => {
   };
 
   const sendEmail = (e: FormValues) => {
-    console.log(e);
-
-    emailjs
-      .sendForm(
-        "service_8qb7aiu",
-        "template_8bof99d",
-        form.current,
-        "VkV6Ag43Otk2IrZ2E"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert(`Thank you ${e.sender_name}. I'll contact you soon..`);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          "service_8qb7aiu",
+          "template_8bof99d",
+          formRef.current, // Pass the form element here
+          "VkV6Ag43Otk2IrZ2E"
+        )
+        .then(
+          () => {
+            alert(`Thank you ${e.sender_name}. I'll contact you soon..`);
+          },
+          (error) => {
+            alert(error.text);
+          }
+        );
+    }
   };
 
   return (
@@ -81,16 +79,11 @@ const ContactMeSection = () => {
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
-            // {async (values) => {
-            //   // You can access Formik values directly within the onSubmit function.
-            //   console.log("User Name:", values.sender_name);
-            //   console.log("User Email:", values.sender_email);
-            //   console.log("Message:", values.message);
             onSubmit={(e) => sendEmail(e)}
           >
             <Form
               className="flex flex-col text-black font-mono text-sm bg-gray-200/10 rounded-md p-3 "
-              ref={form}
+              ref={formRef}
             >
               <label className="text-white">Name</label>
 
