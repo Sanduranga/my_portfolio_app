@@ -30,7 +30,7 @@ const ProjectSection = () => {
     <div className="grid grid-cols-1 absolute w-full bg-gradient-to-t overflow-x-hidden from-gray-100 to-gray-800 justify-center gap-6">
       <Card>
         <img
-          src="./e_commerce_ts.jpg"
+          src="./bg2.jpg"
           alt="Featured Image 1"
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
