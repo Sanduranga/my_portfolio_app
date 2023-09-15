@@ -30,7 +30,7 @@ const ProjectSection = () => {
     <div className="grid grid-cols-1 absolute w-full bg-gradient-to-t overflow-x-hidden from-gray-100 to-gray-800 justify-center gap-6">
       <Card>
         <img
-          src="./bg2.jpg"
+          src="./eCommerceTS.jpg"
           alt="Featured Image 1"
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
@@ -119,6 +119,11 @@ const ProjectSection = () => {
         </Discription>
       </Card>
       <Card>
+        <img
+          src="./eCommerceJS.jpg"
+          alt="Featured Image 1"
+          className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
+        />
         <Discription>
           <div className="text-white space-y-4">
             <h3 className="text-xl font-bold lead-xl bold">
@@ -173,20 +178,23 @@ const ProjectSection = () => {
                 >
                   <BsGithub />
                 </a>
-                <a href="#" target="blank">
+                <a
+                  href="https://sanduranga.github.io/e_commerce_site_react_redux/"
+                  target="blank"
+                >
                   <FaLink />
                 </a>
               </div>
             </div>
           </div>
         </Discription>
-        <img
-          src="./e_commerce.JS.jpg"
-          alt="Featured Image 1"
-          className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
-        />
       </Card>
       <Card>
+        <img
+          src="./framerMotion.jpg"
+          alt="Featured Image 1"
+          className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
+        />
         <Discription>
           <div className="text-white space-y-4">
             <h3 className="text-xl font-bold lead-xl bold">Animate webpage</h3>
@@ -245,15 +253,10 @@ const ProjectSection = () => {
             </div>
           </div>
         </Discription>
-        <img
-          src="./framer_motion.jpg"
-          alt="Featured Image 1"
-          className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
-        />
       </Card>
       <Card>
         <img
-          src="./todo_app.jpg"
+          src="./todoApp.jpg"
           alt="Featured Image 1"
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
@@ -334,6 +337,11 @@ const ProjectSection = () => {
         </Discription>
       </Card>
       <Card>
+        <img
+          src="./ceylonGuider.jpg"
+          alt="Featured Image 1"
+          className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
+        />
         <Discription>
           <div className="text-white space-y-4">
             <h3 className="text-xl font-bold lead-xl bold">Web Page</h3>
@@ -396,11 +404,6 @@ const ProjectSection = () => {
             </div>
           </div>
         </Discription>
-        <img
-          src="./ceylonGuider.jpg"
-          alt="Featured Image 1"
-          className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
-        />
       </Card>
       <div>
         <Footer />

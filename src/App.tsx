@@ -7,14 +7,12 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div
-      className="relative h-screen bg-black"
-      style={{
-        backgroundImage: `url('./bg2.jpg')`,
-        backgroundPosition: "top",
-        backgroundSize: "cover",
-      }}
-    >
+    <div className="relative min-h-screen bg-black">
+      <img
+        src="./bg2.jpg"
+        alt="Background"
+        className="absolute top-0 left-0 object-cover max-h-1/2 w-full"
+      />
       <Header />
       <Routes>
         <Route path="/my_portfolio_app" element={<LandingSection />} />

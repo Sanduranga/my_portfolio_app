@@ -19,7 +19,12 @@ const Header = () => {
           }}
           className="md:text-3xl cursor-pointer text-2xl text-white hover:scale-105"
         >
-          <AiOutlineLinkedin />
+          <a
+            href="https://www.linkedin.com/in/sanduranaga-edirisinghe/"
+            target="blank"
+          >
+            <AiOutlineLinkedin />
+          </a>
         </motion.span>
         <motion.span
           initial={{
@@ -34,7 +39,9 @@ const Header = () => {
           }}
           className="md:text-3xl cursor-pointer mx-3 text-2xl text-white hover:scale-105"
         >
-          <AiOutlineGithub />
+          <a href="https://github.com/Sanduranga" target="blank">
+            <AiOutlineGithub />
+          </a>
         </motion.span>
         <motion.span
           initial={{
@@ -50,9 +57,9 @@ const Header = () => {
         >
           <Link to="/my_portfolio_app">
             <img
-              className="rounded-full h-6 w-6 md:h-8 md:w-8 border-2"
-              src="./images/bg_image.jpg"
-              alt=""
+              className="object-cover rounded-full h-6 w-6 md:h-8 md:w-8 border-2"
+              src="./myPic.jpg"
+              alt="myPic"
             />
           </Link>
         </motion.span>

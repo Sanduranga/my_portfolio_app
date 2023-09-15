@@ -49,7 +49,7 @@ const ContactMeSection = () => {
   };
 
   return (
-    <div className="absolute bg-gradient-to-b from-gray-950/80 to-gray-500 left-0 w-full h-full">
+    <div className="relative bg-gradient-to-b from-gray-950/80 to-gray-500 -mt-[10vh] w-full min-h-screen">
       <h3 className="pt-4 text-2xl font-bold text-center md:mb-10 mb-20 md:mt-12 mt-28 text-white">
         Drop me a message..
       </h3>
@@ -65,7 +65,7 @@ const ContactMeSection = () => {
             },
           }}
           className="md:w-[25vw] md:h-[50vh] hidden md:block bg-gray-400 object-cover rounded-3xl"
-          src="./programmer-gif.gif"
+          src="./programmerGIF.gif"
           alt="gif"
         />
 
