@@ -49,7 +49,7 @@ const ContactMeSection = () => {
   };
 
   return (
-    <div className="relative bg-gradient-to-b from-gray-950/80 to-gray-500 -mt-[10vh] w-full min-h-screen">
+    <div className="absolute top-0 bg-gradient-to-b from-gray-950/80 to-gray-500 w-full min-h-screen">
       <h3 className="pt-4 text-2xl font-bold text-center md:mb-10 mb-20 md:mt-12 mt-28 text-white">
         Drop me a message..
       </h3>
@@ -69,7 +69,7 @@ const ContactMeSection = () => {
           alt="gif"
         />
 
-        <div className=" bg-gray-800/70 rounded-md md:p-10 p-3">
+        <div className="bg-gray-800/70 rounded-md md:p-10 p-3">
           <div className="flex text-amber-500 items-center mb-5">
             <h1 className="text-lg mt-1">
               <AiOutlineMail />
@@ -120,7 +120,7 @@ const ContactMeSection = () => {
           </Formik>
         </div>
       </div>
-      <div className="absolute bottom-0 w-full h-[10vh]">
+      <div className="w-full h-[10vh]">
         <Footer />
       </div>
     </div>

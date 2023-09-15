@@ -7,11 +7,11 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="relative min-h-screen bg-black">
+    <div className="relative max-h-screen bg-black">
       <img
         src="./bg2.jpg"
         alt="Background"
-        className="absolute top-0 left-0 object-cover max-h-1/2 w-full"
+        className="absolute top-0 left-0 h-screen object-cover overflow-hidden"
       />
       <Header />
       <Routes>
