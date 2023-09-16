@@ -26,7 +26,7 @@ const LandingSection = () => {
       <div className="flex absolute text-white tracking-wider left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 flex-col h-[90vh] items-center text-center -mt-10 py-28">
         <img
           className="h-40 w-40 bg-green-300 border-2 rounded-full object-cover"
-          src="./myPic.jpg"
+          src="../myPic.JPG"
           alt="profileImg"
         />
         <h3 className="md:text-xl text-lg font-mono font-bold pt-5">

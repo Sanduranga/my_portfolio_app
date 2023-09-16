@@ -30,7 +30,7 @@ const ProjectSection = () => {
     <div className="grid grid-cols-1 absolute w-full bg-gradient-to-t overflow-x-hidden from-gray-100 to-gray-800 justify-center gap-6">
       <Card>
         <img
-          src="./eCommerceTS.JPG"
+          src="../eCommerceTS.JPG"
           alt="Featured Image 1"
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
@@ -52,7 +52,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -62,7 +62,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -72,7 +72,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -82,7 +82,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -92,7 +92,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -120,7 +120,7 @@ const ProjectSection = () => {
       </Card>
       <Card>
         <img
-          src="./eCommerceJS.JPG"
+          src="../eCommerceJS.JPG"
           alt="Featured Image 1"
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
@@ -141,7 +141,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -151,7 +151,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -163,7 +163,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -191,7 +191,7 @@ const ProjectSection = () => {
       </Card>
       <Card>
         <img
-          src="./framerMotion.JPG"
+          src="../framerMotion.JPG"
           alt="Featured Image 1"
           className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
         />
@@ -208,7 +208,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -218,7 +218,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -228,7 +228,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -256,7 +256,7 @@ const ProjectSection = () => {
       </Card>
       <Card>
         <img
-          src="./todoApp.JPG"
+          src="../todoApp.JPG"
           alt="Featured Image 1"
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
@@ -278,7 +278,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -288,7 +288,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -300,7 +300,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -310,7 +310,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -338,7 +338,7 @@ const ProjectSection = () => {
       </Card>
       <Card>
         <img
-          src="./ceylonGuider.JPG"
+          src="../ceylonGuider.JPG"
           alt="Featured Image 1"
           className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
         />
@@ -359,7 +359,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -369,7 +369,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -379,7 +379,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />

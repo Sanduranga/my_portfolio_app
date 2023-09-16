@@ -58,7 +58,7 @@ const Header = () => {
           <Link to="/my_portfolio_app">
             <img
               className="object-cover rounded-full h-6 w-6 md:h-8 md:w-8 border-2"
-              src="./myPic.jpg"
+              src="../myPic.JPG"
               alt="myPic"
             />
           </Link>
