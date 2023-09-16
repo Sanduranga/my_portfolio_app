@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
-    <div className="flex items-center absolute z-20 top-0 left-50 md:px-0 px-5 justify-between h-[10vh] w-full">
-      <nav className="absolute md:left-10 left-5 flex justify-around max-w-screen-lg">
+    <div className="flex items-center absolute text-black z-20 top-0 md:px-0 px-5 justify-between h-[10vh] w-full">
+      <nav className="absolute md:left-10 left-3 flex justify-around max-w-screen-lg">
         <motion.span
           initial={{
             opacity: 0,
@@ -17,7 +17,7 @@ const Header = () => {
               duration: 1,
             },
           }}
-          className="md:text-3xl cursor-pointer text-2xl text-white hover:scale-105"
+          className="md:text-3xl cursor-pointer text-2xl hover:scale-105"
         >
           <a
             href="https://www.linkedin.com/in/sanduranaga-edirisinghe/"
@@ -37,7 +37,7 @@ const Header = () => {
               duration: 1,
             },
           }}
-          className="md:text-3xl cursor-pointer mx-3 text-2xl text-white hover:scale-105"
+          className="md:text-3xl cursor-pointer mx-3 text-2xl hover:scale-105"
         >
           <a href="https://github.com/Sanduranga" target="blank">
             <AiOutlineGithub />
@@ -64,9 +64,9 @@ const Header = () => {
           </Link>
         </motion.span>
       </nav>
-      <nav className="absolute md:right-10 right-5 flex justify-evenly max-w-screen-xl text-white md:text-xl text-md font-mono font-bold">
+      <nav className="absolute md:right-10 right-8 flex justify-evenly max-w-screen-xl md:text-xl text-md font-mono font-bold">
         <div className=" cursor-pointer hover:underline underline-offset-8 hover:scale-105">
-          <Link to="/projects">Projects</Link>
+          {/* <Link to="#">Projects</Link> */}
         </div>
         <div className=" cursor-pointer hover:underline underline-offset-8 md:ml-5 ml-3 hover:scale-105">
           <Link to="/contact_me_section">Contact me</Link>

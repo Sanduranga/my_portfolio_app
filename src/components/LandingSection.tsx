@@ -1,85 +1,82 @@
 import { motion } from "framer-motion";
 import PopupBoxes from "./PopupBoxes";
+import ProjectSection from "./ProjectSection";
+import Footer from "./Footer";
 
 const LandingSection = () => {
   return (
-    <div className="absolute left-0 top-0 h-[100vh] z-10 w-full overflow-hidden">
-      <motion.img
-        animate={{
-          x: [-30, 0, 30, 0],
-          transition: {
-            duration: 30,
-          },
-        }}
-        src="./bg2.jpg"
-        alt="Background"
-        className="absolute top-0 left-0 object-scale-down w-full max-h-1/2"
-
-        // style={{
-        //   backgroundImage: `url('./bg2.jpg')`,
-        //   backgroundPosition: "top",
-        //   backgroundSize: "cover",
-        //   }}
-      />
-      <div className="absolute w-full h-full bottom-0 bg-gradient-to-r from-yellow-500/30 to-gray-800/60 rounded-lg flex flex-col items-center justify-center text-center"></div>
-
-      <div className="flex absolute text-white tracking-wider left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 flex-col h-[90vh] items-center text-center -mt-10 py-28">
-        <img
-          className="h-40 w-40 bg-green-300 border-2 rounded-full object-cover"
-          src="../myPic.JPG"
-          alt="profileImg"
-        />
-        <h3 className="md:text-xl text-lg font-mono font-bold pt-5">
-          Hello! I am Sanduranga
-        </h3>
-        <h1 className="md:text-4xl text-3xl font-mono font-bold">
-          Frontend developer
-        </h1>
-        <div className="md:text-3xl text-xl font-mono font-bold pt-5">
-          <motion.h2
-            initial={{
-              x: -900,
-            }}
-            animate={{
-              x: 0,
-              transition: {
-                delay: 1,
-                duration: 1.2,
-              },
-            }}
-          >
-            React
-          </motion.h2>
-          <motion.h2
-            initial={{
-              x: 900,
-            }}
-            animate={{
-              x: 0,
-              transition: {
-                delay: 1,
-                duration: 1.2,
-              },
-            }}
-          >
-            Redux
-          </motion.h2>
-          <motion.div
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-              transition: {
-                duration: 2,
-                delay: 1,
-              },
-            }}
-            className="absolute bg-opacity-50 bg-gray-900 w-[60vw] md:w-[45vw] lg:[30vw] -z-20 h-[67vh] rounded-3xl -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
-          ></motion.div>
+    <div className="min-h-[100vh] w-full bg-gradient-to-b from-slate-50 to-slate-200 ">
+      <div className="h-screen content-center w-full grid justify-items-center grid-cols-autofit tracking-wider">
+        <div className="text-black flex flex-col items-center text-center lg:justify-self-end">
+          <img
+            className="md:h-40 md:w-40 h-24 w-24 bg-green-300 border-2 rounded-full"
+            src="../myPic.JPG"
+            alt="profileImg"
+          />
+          <h3 className="md:text-xl text-lg font-mono font-bold pt-5">
+            Hello! I am Sanduranga
+          </h3>
+          <h1 className="md:text-4xl text-3xl font-mono font-bold">
+            Frontend developer
+          </h1>
+          <div className="md:text-3xl text-yellow-600 text-xl font-mono font-bold pt-5">
+            <motion.h2
+              initial={{
+                x: -900,
+              }}
+              animate={{
+                x: 0,
+                transition: {
+                  delay: 1,
+                  duration: 1.2,
+                },
+              }}
+            >
+              React
+            </motion.h2>
+            <motion.h2
+              initial={{
+                x: 900,
+              }}
+              animate={{
+                x: 0,
+                transition: {
+                  delay: 1,
+                  duration: 1.2,
+                },
+              }}
+            >
+              Redux
+            </motion.h2>
+            {/* <motion.div
+              initial={{
+                opacity: 0,
+              }}
+              animate={{
+                opacity: 1,
+                transition: {
+                  duration: 2,
+                  delay: 1,
+                },
+              }}
+              className="  bg-gray-900 w-[60vw] md:w-[45vw] lg:[30vw] h-[67vh] rounded-3xl"
+            ></motion.div> */}
+          </div>
         </div>
+        <img
+          src="typinggirl.gif"
+          className=" md:w-96 md:h-72 w-80 h-60 lg:justify-self-start"
+        />
       </div>
+      <img
+        src="darklight.gif"
+        alt="gif"
+        className="mx-auto md:mt-32 mt-0 mb-20 rounded-3xl drop-shadow-2xl md:px-0 px-3 "
+      />
+
       <PopupBoxes />
+      <ProjectSection />
+      <Footer />
     </div>
   );
 };

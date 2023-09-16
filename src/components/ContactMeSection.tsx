@@ -49,12 +49,12 @@ const ContactMeSection = () => {
   };
 
   return (
-    <div className="absolute top-0 bg-gradient-to-b from-gray-950/80 to-gray-500 w-full min-h-screen">
-      <h3 className="pt-4 text-2xl font-bold text-center md:mb-10 mb-20 md:mt-12 mt-28 text-white">
+    <div className="absolute top-0 bg-white w-full min-h-screen">
+      <h3 className="pt-4 text-2xl font-bold text-center md:mb-10 mb-20 md:mt-12 mt-28 text-black">
         Drop me a message..
       </h3>
 
-      <div className="grid md:grid-cols-2 grid-cols-1 md:mx-20 mb-10 mx-5 gap-2">
+      <div className="grid grid-cols-autofit md:mx-20 mb-10 mx-5 gap-2">
         <motion.img
           animate={{
             x: [-500, 100, 0],
@@ -64,7 +64,7 @@ const ContactMeSection = () => {
               duration: 2,
             },
           }}
-          className="md:w-[25vw] md:h-[50vh] hidden md:block bg-gray-400 object-cover rounded-3xl"
+          className="md:w-[25vw] md:h-[50vh] object-cover rounded-3xl"
           src="./typing.GIF"
           alt="gif"
         />
@@ -82,28 +82,43 @@ const ContactMeSection = () => {
             onSubmit={(e) => sendEmail(e)}
           >
             <Form
-              className="flex flex-col text-black font-mono text-sm bg-gray-200/10 rounded-md p-3 "
+              className="flex flex-col font-mono text-sm bg-white rounded-md p-3 "
               ref={formRef}
             >
-              <label className="text-white">Name</label>
+              <label className="text-black font-bold">Name</label>
 
-              <Field type="text" id="sender_name" name="sender_name" />
+              <Field
+                style={{ borderBottom: "2px solid black" }}
+                type="text"
+                id="sender_name"
+                name="sender_name"
+              />
               <ErrorMessage
                 name="sender_name"
                 component="div"
                 className="text-red-600 tracking-wider font-bold"
               />
-              <label className="text-white mt-5">Email</label>
+              <label className="text-black font-bold mt-5">Email</label>
 
-              <Field type="email" id="sender_email" name="sender_email" />
+              <Field
+                style={{ borderBottom: "2px solid black" }}
+                type="email"
+                id="sender_email"
+                name="sender_email"
+              />
               <ErrorMessage
                 name="sender_email"
                 component="div"
                 className="text-red-600 tracking-wider font-bold"
               />
-              <label className="text-white mt-5">Message</label>
+              <label className="text-black font-bold mt-5">Message</label>
 
-              <Field as="textarea" id="message" name="message" />
+              <Field
+                style={{ borderBottom: "2px solid black" }}
+                as="textarea"
+                id="message"
+                name="message"
+              />
               <ErrorMessage
                 name="message"
                 component="div"

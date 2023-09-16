@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import Footer from "./Footer";
 import { BsGithub } from "react-icons/bs";
 import { FaLink } from "react-icons/fa";
 
@@ -9,7 +8,7 @@ interface cardType {
 
 const Card = (props: cardType) => {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 mt-[10vh] md:bg-gray-950/70 py-10 w-[95vw] mx-auto rounded-3xl">
+    <div className="grid grid-cols-autofit px-10 mt-[10vh] bg-gray-950/10 py-10 rounded-3xl">
       {props.children}
     </div>
   );
@@ -19,7 +18,7 @@ interface discriptionTypes {
 }
 const Discription = (props: discriptionTypes) => {
   return (
-    <div className=" p-5 md:w-[40vw] w-[90vw] mx-auto max-h-[50vh] md:mx-10 overflow-y-auto bg-violet-600 rounded-b-lg md:rounded-xl">
+    <div className="  max-h-[50vh] p-5 overflow-y-auto bg-violet-600 rounded-b-lg md:rounded-xl">
       {props.children}
     </div>
   );
@@ -27,7 +26,10 @@ const Discription = (props: discriptionTypes) => {
 
 const ProjectSection = () => {
   return (
-    <div className="grid grid-cols-1 absolute w-full bg-gradient-to-t overflow-x-hidden from-gray-100 to-gray-800 justify-center gap-6">
+    <div className="grid grid-cols-1 w-full gap-6 md:px-5 px-3">
+      <div className="font-mono text-center font-bold text-4xl">
+        Projects ....
+      </div>
       <Card>
         <img
           src="../eCommerceTS.JPG"
@@ -405,9 +407,6 @@ const ProjectSection = () => {
           </div>
         </Discription>
       </Card>
-      <div>
-        <Footer />
-      </div>
     </div>
   );
 };

@@ -14,7 +14,7 @@ const BoxChildren = (props: childrenTypes) => {
   return (
     <motion.div
       variants={childMotions}
-      className="flex justify-center items-center underline underline-offset-4 text-white tracking-wider w-[26vw] md:w-[18vw] md:text-lg text-sm font-bold border-green-400/90 border-t-8 rounded-md py-3 bg-gradient-to-b from-gray-950 to-gray-700/30"
+      className="flex justify-center items-center underline underline-offset-4 text-white tracking-wider w-[26vw] md:w-[18vw] md:text-lg text-sm font-bold border-yellow-500 border-t-8 rounded-md py-3 bg-gradient-to-b from-gray-950 to-gray-700/30"
     >
       {props.children}
     </motion.div>
