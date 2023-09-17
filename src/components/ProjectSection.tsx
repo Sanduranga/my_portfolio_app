@@ -18,7 +18,7 @@ interface discriptionTypes {
 }
 const Discription = (props: discriptionTypes) => {
   return (
-    <div className="  max-h-[50vh] p-5 overflow-y-auto bg-violet-600 rounded-b-lg md:rounded-xl">
+    <div className="  max-h-[50vh] p-5 overflow-y-auto bg-violet-600 rounded-lg md:mt-0 mt-3 md:rounded-xl">
       {props.children}
     </div>
   );
@@ -27,12 +27,9 @@ const Discription = (props: discriptionTypes) => {
 const ProjectSection = () => {
   return (
     <div className="grid grid-cols-1 w-full gap-6 md:px-5 px-3">
-      <div className="font-mono text-center font-bold text-4xl">
-        Projects ....
-      </div>
       <Card>
         <img
-          src="../eCommerceTS.JPG"
+          src="./ecommercets.jpg"
           alt="Featured Image 1"
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
@@ -122,7 +119,7 @@ const ProjectSection = () => {
       </Card>
       <Card>
         <img
-          src="../eCommerceJS.JPG"
+          src="./ecommercejs.jpg"
           alt="Featured Image 1"
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
@@ -193,7 +190,7 @@ const ProjectSection = () => {
       </Card>
       <Card>
         <img
-          src="../framerMotion.JPG"
+          src="./framermotion.jpg"
           alt="Featured Image 1"
           className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
         />
@@ -258,7 +255,7 @@ const ProjectSection = () => {
       </Card>
       <Card>
         <img
-          src="../todoApp.JPG"
+          src="./todoapp.jpg"
           alt="Featured Image 1"
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
@@ -340,7 +337,7 @@ const ProjectSection = () => {
       </Card>
       <Card>
         <img
-          src="../ceylonGuider.JPG"
+          src="./ceylonguider.jpg"
           alt="Featured Image 1"
           className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
         />

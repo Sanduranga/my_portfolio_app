@@ -14,7 +14,7 @@ const BoxChildren = (props: childrenTypes) => {
   return (
     <motion.div
       variants={childMotions}
-      className="flex justify-center items-center underline underline-offset-4 text-white tracking-wider w-[26vw] md:w-[18vw] md:text-lg text-sm font-bold border-yellow-500 border-t-8 rounded-md py-3 bg-gradient-to-b from-gray-950 to-gray-700/30"
+      className="flex justify-center items-center underline underline-offset-4 text-white tracking-wider w-[26vw] md:w-[18vw] md:text-lg text-sm font-bold border-yellow-500 border-b-8 rounded-md py-3 bg-gradient-to-b from-gray-950 to-gray-700/30"
     >
       {props.children}
     </motion.div>
@@ -36,7 +36,7 @@ const PopupBoxes = () => {
       initial="initial"
       animate="animate"
       variants={boxVarients}
-      className="absolute left-1/2 z-50 -translate-x-1/2 flex justify-evenly overflow-hidden bottom-20  md:bottom-8 md:w-4/5 w-full"
+      className="absolute left-1/2 z-50 -translate-x-1/2 flex justify-evenly overflow-hidden bottom-16  md:bottom-8 md:w-4/5 w-full"
     >
       <BoxChildren>Typescript</BoxChildren>
       <BoxChildren>TailwindCSS</BoxChildren>

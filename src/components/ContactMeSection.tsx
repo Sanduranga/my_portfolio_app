@@ -50,7 +50,7 @@ const ContactMeSection = () => {
 
   return (
     <div className="absolute top-0 bg-white w-full min-h-screen">
-      <h3 className="pt-4 text-2xl font-bold text-center md:mb-10 mb-20 md:mt-12 mt-28 text-black">
+      <h3 className="pt-4 text-2xl font-bold text-center md:mb-10 md:mt-12 mt-20 text-black">
         Drop me a message..
       </h3>
 
@@ -64,8 +64,8 @@ const ContactMeSection = () => {
               duration: 2,
             },
           }}
-          className="md:w-[25vw] md:h-[50vh] object-cover rounded-3xl"
-          src="./typing.GIF"
+          className="md:w-[25vw] md:h-[50vh] w-[50vw] h-[35vh] mx-auto object-cover rounded-3xl"
+          src="./typing.gif"
           alt="gif"
         />
 

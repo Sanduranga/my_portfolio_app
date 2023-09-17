@@ -9,17 +9,18 @@ const LandingSection = () => {
       <div className="h-screen content-center w-full grid justify-items-center grid-cols-autofit tracking-wider">
         <div className="text-black flex flex-col items-center text-center lg:justify-self-end">
           <img
-            className="md:h-40 md:w-40 h-24 w-24 bg-green-300 border-2 rounded-full"
+            className="md:h-40 md:w-40 h-20 w-20 bg-green-300 border-2 rounded-full"
             src="../myPic.JPG"
             alt="profileImg"
           />
-          <h3 className="md:text-xl text-lg font-mono font-bold pt-5">
+          <h3 className="md:text-xl text-md font-mono font-bold pt-5">
             Hello! I am Sanduranga
           </h3>
-          <h1 className="md:text-4xl text-3xl font-mono font-bold">
+
+          <h1 className="md:text-4xl text-xl font-mono font-bold">
             Frontend developer
           </h1>
-          <div className="md:text-3xl text-yellow-600 text-xl font-mono font-bold pt-5">
+          <div className="md:text-3xl text-yellow-600 text-lg font-mono font-bold pt-5">
             <motion.h2
               initial={{
                 x: -900,
@@ -34,20 +35,7 @@ const LandingSection = () => {
             >
               React
             </motion.h2>
-            <motion.h2
-              initial={{
-                x: 900,
-              }}
-              animate={{
-                x: 0,
-                transition: {
-                  delay: 1,
-                  duration: 1.2,
-                },
-              }}
-            >
-              Redux
-            </motion.h2>
+
             {/* <motion.div
               initial={{
                 opacity: 0,
@@ -65,7 +53,7 @@ const LandingSection = () => {
         </div>
         <img
           src="typinggirl.gif"
-          className=" md:w-96 md:h-72 w-80 h-60 lg:justify-self-start"
+          className=" md:w-96 md:h-72 w-72 h-52 lg:justify-self-start"
         />
       </div>
       <img
@@ -75,6 +63,9 @@ const LandingSection = () => {
       />
 
       <PopupBoxes />
+      <div id="abc" className="font-mono text-center font-bold text-4xl">
+        Projects ....
+      </div>
       <ProjectSection />
       <Footer />
     </div>
