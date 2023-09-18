@@ -51,7 +51,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -61,7 +61,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -71,7 +71,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -81,7 +81,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -91,7 +91,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -140,7 +140,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -150,7 +150,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -162,7 +162,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -207,7 +207,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -217,7 +217,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -227,7 +227,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -277,7 +277,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -287,7 +287,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -299,7 +299,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -309,7 +309,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -358,7 +358,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -368,7 +368,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />
@@ -378,7 +378,7 @@ const ProjectSection = () => {
                 <img
                   width="50"
                   height="50"
-                  src=".https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
                   alt="checked--v1"
                   className="w-6 h-6"
                 />

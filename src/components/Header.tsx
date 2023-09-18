@@ -56,10 +56,10 @@ const Header = () => {
             },
           }}
         >
-          <LinkRoutor to="/my_portfolio_app">
+          <LinkRoutor to={"/my_portfolio_app"}>
             <img
               className="object-cover rounded-full h-6 w-6 md:h-8 md:w-8 border-2"
-              src="../myPic.JPG"
+              src="./mypic.jpg"
               alt="myPic"
             />
           </LinkRoutor>
@@ -79,7 +79,7 @@ const Header = () => {
           </LinkScroll>
         </div>
         <div className=" cursor-pointer hover:underline underline-offset-8 md:ml-5 ml-3 hover:scale-105">
-          <LinkRoutor to="/contact_me_section">Contact me</LinkRoutor>
+          <LinkRoutor to={"/contact_me_section"}>Contact me</LinkRoutor>
         </div>
       </nav>
     </div>
