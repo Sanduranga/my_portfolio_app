@@ -21,7 +21,7 @@ const Header = () => {
           className="md:text-3xl cursor-pointer text-2xl hover:scale-105"
         >
           <a
-            href="https://www.LinkRoutoredin.com/in/sanduranaga-edirisinghe/"
+            href="https://www.linkedin.com/in/sanduranaga-edirisinghe/"
             target="blank"
           >
             <AiFillLinkedin />

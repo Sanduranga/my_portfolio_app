@@ -10,7 +10,7 @@ const LandingSection = () => {
         <div className="text-black flex flex-col items-center text-center lg:justify-self-end">
           <img
             className="md:h-40 md:w-40 h-20 w-20 bg-green-300 border-2 rounded-full"
-            src="../mypic.jpg"
+            src="./mypic.jpg"
             alt="profileImg"
           />
           <h3 className="md:text-xl text-md font-mono font-bold pt-5">
