@@ -2,24 +2,37 @@ import { ReactNode } from "react";
 import { BsGithub } from "react-icons/bs";
 import { FaLink } from "react-icons/fa";
 
-interface cardType {
+interface propType {
   children: ReactNode;
 }
 
-const Card = (props: cardType) => {
+const Card = (props: propType) => {
   return (
-    <div className="grid grid-cols-autofit px-10 mt-[10vh] bg-gray-950/10 py-10 rounded-3xl">
+    <div className="grid grid-cols-autofit text-black px-10 mt-[10vh] bg-slate-100 font-sans font-bold py-10 rounded-3xl">
       {props.children}
     </div>
   );
 };
-interface discriptionTypes {
-  children: ReactNode;
-}
-const Discription = (props: discriptionTypes) => {
+
+const Discription = (props: propType) => {
   return (
-    <div className="  max-h-[50vh] p-5 overflow-y-auto bg-violet-600 rounded-lg md:mt-0 mt-3 md:rounded-xl">
+    <div className="text-black max-h-[50vh] p-5 overflow-y-auto font-bold rounded-lg md:mt-0 mt-3 md:rounded-xl">
       {props.children}
+    </div>
+  );
+};
+
+const Tools = (props: propType) => {
+  return (
+    <div className="flex space-x-3 text-black">
+      <img
+        width="50"
+        height="50"
+        src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
+        alt="checked--v1"
+        className="w-6 h-6 bg-black"
+      />
+      <h1 className="paragraph-l font-bold text-black">{props.children}</h1>
     </div>
   );
 };
@@ -34,84 +47,38 @@ const ProjectSection = () => {
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
         <Discription>
-          <div className="text-white space-y-4 ">
+          <div className="font-bold space-y-4 ">
             <h3 className="text-xl font-bold lead-xl bold">
               E-commerce site(ts & toolkit)
             </h3>
-            <div className="md:text-lg text-md font-light">
+            <div className="md:text-lg">
               This is a E_Commerce site in Typescript version. And also I used
               Redux Toolkit to manage the global store and Picsum free API used
               to fetch as store items. Dark mode Light mode are also available
               in this web site.
             </div>
-          </div>
-          <div className="flex justify-between pt-8 items-center">
-            <div className="flex flex-col gap-y-2.5">
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">React</span>
+            <div className="flex justify-between pt-8 items-center">
+              <div className="flex flex-col gap-y-2.5">
+                <Tools>React</Tools>
+                <Tools>Redux</Tools>
+                <Tools>Rest API</Tools>
+                <Tools>TailwindCSS</Tools>
               </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">Redux toolkit</span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">Rest API</span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">Typescripts</span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">React routor dom</span>
-              </div>
-            </div>
-            <div className="flex flex-col justify-end">
-              <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">
-                <a
-                  href="https://github.com/Sanduranga/e_commerce_site_ts"
-                  target="blank"
-                >
-                  <BsGithub />
-                </a>
-                <a
-                  href="https://sanduranga.github.io/e_commerce_site_ts/"
-                  target="blank"
-                >
-                  <FaLink />
-                </a>
+              <div className="flex justify-end">
+                <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">
+                  <a
+                    href="https://github.com/Sanduranga/e_commerce_site_ts"
+                    target="blank"
+                  >
+                    <BsGithub />
+                  </a>
+                  <a
+                    href="https://sanduranga.github.io/e_commerce_site_ts/"
+                    target="blank"
+                  >
+                    <FaLink />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -124,7 +91,7 @@ const ProjectSection = () => {
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
         <Discription>
-          <div className="text-white space-y-4">
+          <div className="font-bold space-y-4">
             <h3 className="text-xl font-bold lead-xl bold">
               E-commerce site(js)
             </h3>
@@ -136,38 +103,9 @@ const ProjectSection = () => {
           </div>
           <div className="flex justify-between pt-8 items-center">
             <div className="flex flex-col gap-y-2.5">
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">React</span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">
-                  Redux(createStore)
-                </span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">Rest API</span>
-              </div>
+              <Tools>React</Tools>
+              <Tools>Redux(createStore)</Tools>
+              <Tools>Rest API</Tools>
             </div>
             <div className="flex flex-col justify-end">
               <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">
@@ -195,7 +133,7 @@ const ProjectSection = () => {
           className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
         />
         <Discription>
-          <div className="text-white space-y-4">
+          <div className="font-bold space-y-4">
             <h3 className="text-xl font-bold lead-xl bold">Animate webpage</h3>
             <div className="text-lg font-light">
               Here I made simple attractive animate page using Framer motion.
@@ -203,36 +141,9 @@ const ProjectSection = () => {
           </div>
           <div className="flex justify-between pt-8 items-center">
             <div className="flex flex-col gap-y-2.5">
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">React</span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">Framer motion</span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">Typescript</span>
-              </div>
+              <Tools>React</Tools>
+              <Tools>FramerMotion</Tools>
+              <Tools>Typescript</Tools>
             </div>
             <div className="flex flex-col justify-end">
               <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">
@@ -260,7 +171,7 @@ const ProjectSection = () => {
           className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
         <Discription>
-          <div className="text-white space-y-4 ">
+          <div className="font-bold space-y-4 ">
             <h3 className="text-xl font-bold lead-xl bold">Todo app</h3>
             <div className="md:text-lg text-md font-light">
               This is a simple Todo app with redux. I used Jsonplaceholder free
@@ -273,48 +184,10 @@ const ProjectSection = () => {
           </div>
           <div className="flex justify-between pt-8 items-center">
             <div className="flex flex-col gap-y-2.5">
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">React</span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">
-                  Redux (createStore)
-                </span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">CRUD operations</span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">Form handling</span>
-              </div>
+              <Tools>React</Tools>
+              <Tools>Redux(createStore)</Tools>
+              <Tools>CRUD Operation</Tools>
+              <Tools>Form Handeling</Tools>
             </div>
             <div className="flex flex-col justify-end">
               <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">
@@ -342,7 +215,7 @@ const ProjectSection = () => {
           className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
         />
         <Discription>
-          <div className="text-white space-y-4">
+          <div className="font-bold space-y-4">
             <h3 className="text-xl font-bold lead-xl bold">Web Page</h3>
             <div className="text-lg font-light">
               This is simple webpage and my first web page. Here I used basic
@@ -354,36 +227,9 @@ const ProjectSection = () => {
           </div>
           <div className="flex justify-between pt-8 items-center">
             <div className="flex flex-col gap-y-2.5">
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">React</span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">React routor dom</span>
-              </div>
-              <div className="flex space-x-3 text-white">
-                <img
-                  width="50"
-                  height="50"
-                  src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
-                  alt="checked--v1"
-                  className="w-6 h-6"
-                />
-                <span className="paragraph-l font-bold">Form handling</span>
-              </div>
+              <Tools>React</Tools>
+              <Tools>React Router</Tools>
+              <Tools>Form Handeling</Tools>
             </div>
             <div className="flex flex-col justify-end">
               <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">

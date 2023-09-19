@@ -2,14 +2,22 @@ import { motion } from "framer-motion";
 import PopupBoxes from "./PopupBoxes";
 import ProjectSection from "./ProjectSection";
 import Footer from "./Footer";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const LandingSection = () => {
+  const [typeEffect] = useTypewriter({
+    words: ["ReactJS❤️‍🔥", "Redux😇", "TailwindCSS🥰", "Typescript💪"],
+    // @ts-expect-error
+    loop: {},
+    typeSpeed: 100,
+    deleteSpeed: 40,
+  });
   return (
-    <div className="min-h-[100vh] w-full bg-gradient-to-b from-slate-50 to-slate-200 ">
-      <div className="h-screen content-center w-full grid justify-items-center grid-cols-autofit tracking-wider">
-        <div className="text-black flex flex-col items-center text-center lg:justify-self-end">
+    <div className="min-h-[100vh] w-full bg-gradient-to-b from-gray-100 to-gray-950 ">
+      <div className="h-screen content-center bg-gradient-to-b from-gray-50 to-slate-200 w-full grid justify-items-center grid-cols-autofit tracking-wider">
+        <div className="text-black flex flex-col text-center items-center lg:justify-self-end">
           <img
-            className="md:h-40 md:w-40 h-20 w-20 bg-green-300 border-2 rounded-full"
+            className="md:h-36 md:w-36 h-20 w-20 border-8 border-yellow-600 bg-green-300 rounded-full"
             src="./mypic.jpg"
             alt="profileImg"
           />
@@ -20,7 +28,7 @@ const LandingSection = () => {
           <h1 className="md:text-4xl text-xl font-mono font-bold">
             Frontend developer
           </h1>
-          <div className="md:text-3xl text-yellow-600 text-lg font-mono font-bold pt-5">
+          <div className="md:text-3xl self-start text-yellow-600 text-lg font-mono font-bold pt-5">
             <motion.h2
               initial={{
                 x: -900,
@@ -33,22 +41,12 @@ const LandingSection = () => {
                 },
               }}
             >
-              React
-            </motion.h2>
+              <span className="text-start">{typeEffect}</span>
 
-            {/* <motion.div
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-                transition: {
-                  duration: 2,
-                  delay: 1,
-                },
-              }}
-              className="  bg-gray-900 w-[60vw] md:w-[45vw] lg:[30vw] h-[67vh] rounded-3xl"
-            ></motion.div> */}
+              <span>
+                <Cursor />
+              </span>
+            </motion.h2>
           </div>
         </div>
         <img
