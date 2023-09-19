@@ -38,9 +38,9 @@ const PopupBoxes = () => {
       variants={boxVarients}
       className="absolute left-1/2 z-50 -translate-x-1/2 flex justify-evenly overflow-hidden bottom-16  md:bottom-8 md:w-4/5 w-full"
     >
-      <BoxChildren>Typescript</BoxChildren>
-      <BoxChildren>TailwindCSS</BoxChildren>
-      <BoxChildren>FramerMotion</BoxChildren>
+      <BoxChildren>Responsive</BoxChildren>
+      <BoxChildren>Attractive</BoxChildren>
+      <BoxChildren>Web Apps</BoxChildren>
     </motion.div>
   );
 };
