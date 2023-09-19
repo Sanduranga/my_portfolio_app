@@ -15,7 +15,7 @@ const LandingSection = () => {
   return (
     <div className="min-h-[100vh] w-full bg-gradient-to-b from-gray-100 to-gray-950 ">
       <div className="h-screen content-center bg-gradient-to-b from-gray-50 to-slate-200 w-full grid justify-items-center grid-cols-autofit tracking-wider">
-        <div className="text-black flex flex-col text-center items-center lg:justify-self-end">
+        <div className="text-black flex flex-col text-center items-center md:mb-0 mb-5 lg:justify-self-end">
           <img
             className="md:h-36 md:w-36 h-20 w-20 border-8 border-yellow-600 bg-green-300 rounded-full"
             src="./mypic.jpg"
@@ -51,7 +51,7 @@ const LandingSection = () => {
         </div>
         <img
           src="typinggirl.gif"
-          className=" md:w-96 md:h-72 w-72 h-52 lg:justify-self-start"
+          className=" md:w-96 md:h-72 w-80 h-60 lg:justify-self-start"
         />
       </div>
       <img
@@ -59,8 +59,10 @@ const LandingSection = () => {
         alt="gif"
         className="mx-auto md:mt-32 mt-0 mb-20 rounded-3xl drop-shadow-2xl md:px-0 px-3 "
       />
+      <div className="md:block hidden">
+        <PopupBoxes />
+      </div>
 
-      <PopupBoxes />
       <div id="abc" className="font-mono text-center font-bold text-4xl">
         Projects ....
       </div>
