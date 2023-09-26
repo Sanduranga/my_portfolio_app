@@ -14,7 +14,7 @@ const LandingSection = () => {
     deleteSpeed: 40,
   });
   return (
-    <div className="min-h-[100vh] w-full bg-gradient-to-b from-gray-100 to-gray-950 ">
+    <div className="min-h-[100vh] grid grid-cols-1 gap-7 justify-items-center w-full bg-gradient-to-b from-gray-100 to-gray-950 ">
       <div className="relative flex justify-center items-center h-screen content-center bg-gradient-to-b from-gray-50 to-slate-200 w-full tracking-wider">
         <div className=" text-white flex flex-col text-center items-center sm:mb-0 mb-5 lg:justify-self-end z-10">
           <img
@@ -48,17 +48,22 @@ const LandingSection = () => {
         />
         <div className="bg-gray-950/90 absolute h-screen w-full"></div>
       </div>
-      <img
-        src="darklight.gif"
-        alt="gif"
-        className="mx-auto sm:mt-32 mt-0 mb-20 rounded-3xl drop-shadow-2xl sm:px-0 px-3 "
-      />
+      <Amaze>
+        <img
+          src="darklight.gif"
+          alt="gif"
+          className="mx-auto sm:mt-32 mt-3 mb-20 rounded-3xl drop-shadow-2xl sm:px-0 px-3 "
+        />
+      </Amaze>
       <div className="sm:block hidden">
         <PopupBoxes />
       </div>
 
       <Amaze>
-        <h1 id="projects" className="font-mono text-center font-bold text-4xl">
+        <h1
+          id="projects"
+          className="font-mono text-center font-bold text-4xl px-4 py-3 w-fit"
+        >
           Projects ....
         </h1>
       </Amaze>

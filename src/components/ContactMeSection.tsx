@@ -52,7 +52,7 @@ const ContactMeSection = () => {
       <Amaze>
         <h1
           id="contact_me_section"
-          className="pt-4 text-2xl font-bold text-center md:mb-10 md:mt-12 mt-20 text-black"
+          className="py-4 w-fit h-fit text-2xl mx-auto font-bold text-center md:mb-10 md:mt-12 mt-20 text-black"
         >
           Drop me a message..
         </h1>

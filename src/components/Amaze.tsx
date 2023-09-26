@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 interface props {
   children: JSX.Element;
@@ -26,7 +26,7 @@ function Amaze({ children }: props) {
         initial="hidden"
         animate={animateDiv}
         transition={{
-          delay: 0.7,
+          delay: 0.8,
           duration: 0.5,
         }}
       >
@@ -40,11 +40,11 @@ function Amaze({ children }: props) {
         initial="hidden"
         animate={animateslider}
         transition={{
-          delay: 0.2,
+          delay: 0.4,
           duration: 0.5,
           ease: "easeIn",
         }}
-        className="absolute z-50 top-2 bottom-2 left-0 right-0 bg-green-600"
+        className="absolute z-50 top-2 bottom-2 left-0 rounded-xl right-0 bg-gradient-to-r from-green-500 to-green-950/40"
       />
     </div>
   );
