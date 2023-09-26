@@ -5,7 +5,7 @@ import { Link as LinkRoutor } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 const Header = () => {
   return (
-    <div className="flex items-center absolute text-black z-20 top-0 md:px-0 px-5 justify-between h-[10vh] w-full">
+    <div className="flex items-center absolute text-white z-20 top-0 md:px-0 px-5 justify-between h-[10vh] w-full">
       <nav className="absolute md:left-10 left-3 flex justify-around max-w-screen-lg">
         <motion.span
           initial={{
@@ -14,7 +14,7 @@ const Header = () => {
           animate={{
             opacity: 1,
             transition: {
-              delay: 5,
+              delay: 2,
               duration: 1,
             },
           }}
@@ -34,7 +34,7 @@ const Header = () => {
           animate={{
             opacity: 1,
             transition: {
-              delay: 6,
+              delay: 3,
               duration: 1,
             },
           }}
@@ -51,14 +51,14 @@ const Header = () => {
           animate={{
             opacity: 1,
             transition: {
-              delay: 7,
+              delay: 4,
               duration: 1,
             },
           }}
         >
           <LinkRoutor to={"/my_portfolio_app"}>
             <img
-              className="object-cover rounded-full h-6 w-6 md:h-8 md:w-8 border-2"
+              className="object-cover rounded-full h-6 w-6 md:h-9 md:w-9 border-2 border-green-900"
               src="./mypic.jpg"
               alt="myPic"
             />
@@ -69,17 +69,26 @@ const Header = () => {
         <div className=" cursor-pointer hover:underline underline-offset-8 hover:scale-105">
           <LinkScroll
             activeClass="active"
-            to="abc"
+            to="projects"
             spy={true}
             smooth={true}
-            offset={-30}
+            offset={0}
             duration={500}
           >
             Projects
           </LinkScroll>
         </div>
         <div className=" cursor-pointer hover:underline underline-offset-8 md:ml-5 ml-3 hover:scale-105">
-          <LinkRoutor to={"/contact_me_section"}>Contact me</LinkRoutor>
+          <LinkScroll
+            activeClass="active"
+            to={"contact_me_section"}
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1000}
+          >
+            Contact me
+          </LinkScroll>
         </div>
       </nav>
     </div>

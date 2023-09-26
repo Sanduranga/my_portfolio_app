@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { BsGithub } from "react-icons/bs";
 import { FaLink } from "react-icons/fa";
+import Amaze from "./Amaze";
 
 interface propType {
   children: ReactNode;
@@ -8,9 +9,11 @@ interface propType {
 
 const Card = (props: propType) => {
   return (
-    <div className="grid grid-cols-autofit text-black px-10 mt-[10vh] bg-slate-100 font-sans font-bold py-10 rounded-3xl">
-      {props.children}
-    </div>
+    <Amaze>
+      <div className="grid grid-cols-autofit text-black px-10 mt-[10vh] bg-slate-100 font-sans font-bold py-10 rounded-3xl">
+        {props.children}
+      </div>
+    </Amaze>
   );
 };
 

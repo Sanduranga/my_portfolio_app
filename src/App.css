@@ -1,3 +1,28 @@
 body {
   @apply bg-black;
 }
+.bg-gradient-red {
+  background: linear-gradient(45deg, #ee2f15, #ffd900);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bg-gradient-yellow {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration-thickness: 0.1em;
+  text-underline-offset: 0.4em;
+  letter-spacing: 0.05em;
+  width: 20vw;
+  font-size: 1.125rem;
+  font-weight: 700;
+
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-image: linear-gradient(45deg, #ee2f15, #ffd900);
+  border-image-slice: 1;
+  border-width: 0 0 4px 0; /* Adjust the 2px to set the thickness of the bottom border */
+  border-style: solid;
+}

@@ -1,8 +1,9 @@
-import { motion } from "framer-motion";
 import PopupBoxes from "./PopupBoxes";
 import ProjectSection from "./ProjectSection";
 import Footer from "./Footer";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Amaze from "./Amaze";
+import ContactMeSection from "./ContactMeSection";
 
 const LandingSection = () => {
   const [typeEffect] = useTypewriter({
@@ -14,59 +15,55 @@ const LandingSection = () => {
   });
   return (
     <div className="min-h-[100vh] w-full bg-gradient-to-b from-gray-100 to-gray-950 ">
-      <div className="h-screen content-center bg-gradient-to-b from-gray-50 to-slate-200 w-full grid justify-items-center grid-cols-autofit tracking-wider">
-        <div className="text-black flex flex-col text-center items-center md:mb-0 mb-5 lg:justify-self-end">
+      <div className="relative flex justify-center items-center h-screen content-center bg-gradient-to-b from-gray-50 to-slate-200 w-full tracking-wider">
+        <div className=" text-white flex flex-col text-center items-center sm:mb-0 mb-5 lg:justify-self-end z-10">
           <img
-            className="md:h-36 md:w-36 h-20 w-20 border-8 border-yellow-600 bg-green-300 rounded-full"
+            className="sm:h-36 sm:w-36 h-20 w-20 border-8 rounded-full"
             src="./mypic.jpg"
             alt="profileImg"
           />
-          <h3 className="md:text-xl text-md font-mono font-bold pt-5">
+
+          <h3 className="sm:text-xl text-sm font-mono font-bold pt-5">
             Hello! I am Sanduranga
           </h3>
 
-          <h1 className="md:text-4xl text-xl font-mono font-bold">
-            Frontend developer
-          </h1>
-          <div className="md:text-3xl self-start text-yellow-600 text-lg font-mono font-bold pt-5">
-            <motion.h2
-              initial={{
-                x: -900,
-              }}
-              animate={{
-                x: 0,
-                transition: {
-                  delay: 1,
-                  duration: 1.2,
-                },
-              }}
-            >
-              <span className="text-start">{typeEffect}</span>
-
-              <span>
+          <Amaze>
+            <h1 className="sm:text-4xl text-xl font-mono font-bold">
+              Frontend developer
+            </h1>
+          </Amaze>
+          <div className="sm:text-3xl self-start text-lg font-mono font-bold pt-5">
+            <Amaze>
+              <span className="text-start">
+                <span className="bg-gradient-red">{typeEffect}</span>
                 <Cursor />
               </span>
-            </motion.h2>
+            </Amaze>
           </div>
         </div>
         <img
-          src="typinggirl.gif"
-          className=" md:w-96 md:h-72 w-80 h-60 lg:justify-self-start"
+          src="typing.gif"
+          // className=" sm:w-96 sm:h-72 w-80 h-60 lg:justify-self-start"
+          className="absolute sm:w-full h-screen z-0 top-0 blur-sm"
         />
+        <div className="bg-gray-950/90 absolute h-screen w-full"></div>
       </div>
       <img
         src="darklight.gif"
         alt="gif"
-        className="mx-auto md:mt-32 mt-0 mb-20 rounded-3xl drop-shadow-2xl md:px-0 px-3 "
+        className="mx-auto sm:mt-32 mt-0 mb-20 rounded-3xl drop-shadow-2xl sm:px-0 px-3 "
       />
-      <div className="md:block hidden">
+      <div className="sm:block hidden">
         <PopupBoxes />
       </div>
 
-      <div id="abc" className="font-mono text-center font-bold text-4xl">
-        Projects ....
-      </div>
+      <Amaze>
+        <h1 id="projects" className="font-mono text-center font-bold text-4xl">
+          Projects ....
+        </h1>
+      </Amaze>
       <ProjectSection />
+      <ContactMeSection />
       <Footer />
     </div>
   );

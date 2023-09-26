@@ -1,10 +1,9 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { AiOutlineMail } from "react-icons/ai";
-import { motion } from "framer-motion";
-import Footer from "./Footer";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import Amaze from "./Amaze";
 
 const validationSchema = Yup.object().shape({
   sender_name: Yup.string().required("Required"),
@@ -49,23 +48,20 @@ const ContactMeSection = () => {
   };
 
   return (
-    <div className="absolute top-0 bg-white w-full min-h-screen">
-      <h3 className="pt-4 text-2xl font-bold text-center md:mb-10 md:mt-12 mt-20 text-black">
-        Drop me a message..
-      </h3>
+    <div className=" bg-hash1 w-full min-h-screen">
+      <Amaze>
+        <h1
+          id="contact_me_section"
+          className="pt-4 text-2xl font-bold text-center md:mb-10 md:mt-12 mt-20 text-black"
+        >
+          Drop me a message..
+        </h1>
+      </Amaze>
 
       <div className="grid grid-cols-autofit md:mx-20 mb-10 mx-5 gap-2">
-        <motion.img
-          animate={{
-            x: [-500, 100, 0],
-            opacity: [1, 0.8, 0.5, 0.2, 0, 1],
-            transition: {
-              delay: 0.3,
-              duration: 2,
-            },
-          }}
+        <img
           className="md:w-[25vw] md:h-[50vh] w-[50vw] h-[35vh] mx-auto object-cover rounded-3xl"
-          src="./typing.gif"
+          src="./typinggirl.gif"
           alt="gif"
         />
 
@@ -134,9 +130,6 @@ const ContactMeSection = () => {
             </Form>
           </Formik>
         </div>
-      </div>
-      <div className="w-full h-[10vh]">
-        <Footer />
       </div>
     </div>
   );

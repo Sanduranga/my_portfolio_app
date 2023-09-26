@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import "../App.css";
+
 interface childrenTypes {
   children: string;
 }
@@ -12,10 +14,7 @@ const childMotions = {
 };
 const BoxChildren = (props: childrenTypes) => {
   return (
-    <motion.div
-      variants={childMotions}
-      className="flex justify-center items-center underline underline-offset-4 text-white tracking-wider w-[26vw] md:w-[18vw] md:text-lg text-sm font-bold border-yellow-500 border-b-8 rounded-md py-3 bg-gradient-to-b from-gray-950 to-gray-700/30"
-    >
+    <motion.div variants={childMotions} className="bg-gradient-yellow">
       {props.children}
     </motion.div>
   );
@@ -24,7 +23,7 @@ const BoxChildren = (props: childrenTypes) => {
 const boxVarients = {
   animate: {
     transition: {
-      delayChildren: 3,
+      delayChildren: 1,
       staggerChildren: 0.7,
     },
   },
