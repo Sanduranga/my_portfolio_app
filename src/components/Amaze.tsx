@@ -26,7 +26,7 @@ function Amaze({ children }: props) {
         initial="hidden"
         animate={animateDiv}
         transition={{
-          delay: 0.8,
+          delay: 0.4,
           duration: 0.5,
         }}
       >
@@ -40,7 +40,7 @@ function Amaze({ children }: props) {
         initial="hidden"
         animate={animateslider}
         transition={{
-          delay: 0.4,
+          delay: 0.2,
           duration: 0.5,
           ease: "easeIn",
         }}

@@ -1,8 +1,9 @@
 import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import { AiOutlineGithub } from "@react-icons/all-files/ai/AiOutlineGithub";
 import { motion } from "framer-motion";
-import { Link as LinkRoutor } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
+import Amaze from "./Amaze";
+
 const Header = () => {
   return (
     <div className="flex items-center absolute text-white z-20 top-0 md:px-0 px-5 justify-between h-[10vh] w-full">
@@ -44,28 +45,8 @@ const Header = () => {
             <AiOutlineGithub />
           </a>
         </motion.span>
-        <motion.span
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-            transition: {
-              delay: 4,
-              duration: 1,
-            },
-          }}
-        >
-          <LinkRoutor to={"/my_portfolio_app"}>
-            <img
-              className="object-cover rounded-full h-6 w-6 md:h-9 md:w-9 border-2 border-green-900"
-              src="./mypic.jpg"
-              alt="myPic"
-            />
-          </LinkRoutor>
-        </motion.span>
       </nav>
-      <nav className="absolute md:right-10 right-8 flex justify-evenly max-w-screen-xl md:text-xl text-md font-mono font-bold">
+      <nav className="absolute md:right-10 right-6 flex justify-evenly max-w-screen-xl md:text-xl text-sm font-mono font-bold">
         <div className=" cursor-pointer hover:underline underline-offset-8 hover:scale-105">
           <LinkScroll
             activeClass="active"
@@ -75,7 +56,9 @@ const Header = () => {
             offset={0}
             duration={500}
           >
-            Projects
+            <Amaze>
+              <span>Projects</span>
+            </Amaze>
           </LinkScroll>
         </div>
         <div className=" cursor-pointer hover:underline underline-offset-8 md:ml-5 ml-3 hover:scale-105">
@@ -87,7 +70,9 @@ const Header = () => {
             offset={0}
             duration={1000}
           >
-            Contact me
+            <Amaze>
+              <span>Contact me</span>
+            </Amaze>
           </LinkScroll>
         </div>
       </nav>
