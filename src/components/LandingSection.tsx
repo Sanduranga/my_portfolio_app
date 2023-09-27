@@ -21,7 +21,7 @@ const LandingSection = () => {
       <div className="relative flex justify-center items-center h-screen content-center bg-gradient-to-b from-gray-50 to-slate-200 w-full tracking-wider">
         <div className="relative text-white flex flex-col text-center items-center sm:mb-0 mb-5 lg:justify-self-end z-10">
           <img
-            className="sm:h-36 sm:w-36 h-28 w-28 border-8 rounded-full"
+            className="sm:h-36 sm:w-36 grayscale object-cover h-28 w-28 sm:border-8 border-4 rounded-full"
             src="./mypic.jpg"
             alt="profileImg"
           />
