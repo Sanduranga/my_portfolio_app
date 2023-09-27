@@ -35,7 +35,7 @@ const Header = () => {
           animate={{
             opacity: 1,
             transition: {
-              delay: 3,
+              delay: 2.5,
               duration: 1,
             },
           }}

@@ -32,7 +32,7 @@ const LandingSection = () => {
             animate={{
               opacity: 1,
               transition: {
-                delay: 4,
+                delay: 3,
                 duration: 1,
               },
             }}
@@ -40,7 +40,8 @@ const LandingSection = () => {
           >
             <div
               onClick={() => {
-                saveAs("/STEdirisingheCV.pdf", "ST Edirisinghe CV.pdf");
+                const pdfUrl = "./STEdirisingheCV.pdf";
+                saveAs(pdfUrl, "ST Edirisinghe CV.pdf");
               }}
             >
               <h1 className="bg-white py-3 rounded-full text-3xl flex justify-center">
