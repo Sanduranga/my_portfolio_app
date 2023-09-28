@@ -36,7 +36,7 @@ const LandingSection = () => {
                 duration: 1,
               },
             }}
-            className="absolute sm:right-0 -bottom-32 sm:top-0 cursor-pointer hover:scale-105"
+            className="absolute sm:right-0 -bottom-28 sm:top-0 cursor-pointer hover:scale-105"
           >
             <div
               onClick={() => {
@@ -78,6 +78,15 @@ const LandingSection = () => {
         />
         <div className="bg-gray-950/90 absolute h-screen w-full"></div>
       </div>
+      <Amaze>
+        <h1 className="font-mono bg-gradient-to-br from-slate-300 to-gray-500 sm:text-xl text-sm w-[80vw] text-justify sm:p-5 p-3 shadow-lg shadow-black">
+          <strong className="font-bold sm:text-2xl text-lg">I am</strong> an IT
+          and Tech enthusiast with an inquisitive mind, willing to learn beyond
+          boundaries. Now I'm Seeking an internship opportunity to apply what I
+          have learned and sharpen my skills, gain experience to start my
+          journey to become a full-stack developer.
+        </h1>
+      </Amaze>
       <Amaze>
         <img
           src="darklight.gif"

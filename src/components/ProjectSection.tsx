@@ -10,7 +10,7 @@ interface propType {
 const Card = (props: propType) => {
   return (
     <Amaze>
-      <div className="grid grid-cols-autofit text-black px-10 mt-[10vh] bg-slate-100 font-sans py-10 rounded-3xl overflow-hidden">
+      <div className="grid sm:grid-cols-autofit sm:h-[65vh] h-[50vh] mt-5 text-black shadow-lg shadow-black bg-slate-400 font-sans sm:p-7 p-2 rounded-xl overflow-hidden">
         {props.children}
       </div>
     </Amaze>
@@ -19,7 +19,7 @@ const Card = (props: propType) => {
 
 const Discription = (props: propType) => {
   return (
-    <div className="text-black max-h-[50vh] p-5 overflow-y-auto rounded-lg md:mt-0 mt-3 md:rounded-xl">
+    <div className="text-black shadow-lg shadow-black sm:p-4 p-2 max-h-[50vh] overflow-y-scroll rounded-md md:mt-0 mt-3 md:rounded-xl">
       {props.children}
     </div>
   );
@@ -33,53 +33,106 @@ const Tools = (props: propType) => {
         height="50"
         src="https://img.icons8.com/ios-filled/50/FFFFFF/checked--v1.png"
         alt="checked--v1"
-        className="w-6 h-6 bg-black"
+        className="sm:w-5 sm:h-5 w-3 h-3 bg-black"
       />
-      <h1 className="paragraph-l font-bold text-black">{props.children}</h1>
+      <h1 className="paragraph-l font-bold sm:text-md text-sm text-black">
+        {props.children}
+      </h1>
     </div>
   );
 };
 
 const ProjectSection = () => {
   return (
-    <div className="grid grid-cols-autofit w-full gap-6 md:px-5 px-3">
+    <div className="relative grid sm:grid-cols-autofit grid-cols-2 gap-5 w-full sm:p-10 px-3">
+      <img
+        src="./metrics.gif"
+        alt=""
+        className="absolute w-full object-cover h-full top-0 left-0"
+      />
+      <div className="absolute w-full bg-gray-800/80 h-full top-0 left-0"></div>
       <Card>
         <img
           src="./ecommercets.jpg"
           alt="Featured Image 1"
-          className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
+          className="shadow-lg shadow-black md:rounded-t-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
         <Discription>
           <div className="space-y-4 ">
-            <h3 className="text-xl font-bold">E-commerce site(ts & toolkit)</h3>
-            <div className="md:text-lg">
-              This is an E_Commerce site in Typescript version. And also I used
-              Redux Toolkit to manage the global store and Picsum free API used
-              to fetch as store items. Dark mode Light mode are also available
-              in this web site.
+            <h3 className="sm:text-xl text-md font-bold">
+              E-commerce site(ts & toolkit)
+            </h3>
+            <div className="sm:text-lg text-sm">
+              This is an e_commerce site in Typescript version. And also I used
+              Redux Toolkit to manage and maintain the application state. Also
+              Picsum free API used to fetch images as store items. Dark mode
+              Light mode are also available in this web site.
             </div>
-            <div className="flex justify-between pt-8 items-center">
-              <div className="flex flex-col gap-y-2.5">
-                <Tools>React</Tools>
-                <Tools>Redux(Toolkit)</Tools>
-                <Tools>Rest API</Tools>
-                <Tools>TailwindCSS</Tools>
+          </div>
+          <div className="sm:flex-row mt-0 flex-col-reverse flex justify-between sm:pt-8 pt-0 items-center">
+            <div className="flex flex-col gap-y-1">
+              <Tools>React</Tools>
+              <Tools>Redux (Toolkit)</Tools>
+              <Tools>Typescript</Tools>
+              <Tools>Rest API</Tools>
+              <Tools>TailwindCSS</Tools>
+            </div>
+
+            <div className="flex justify-end">
+              <div className="flex sm:my-0 my-2 gap-2 pr-2 sm:text-2xl text-md justify-between items-center text-primary-200 paragraph-m rounded-full">
+                <a
+                  href="https://github.com/Sanduranga/e_commerce_site_ts"
+                  target="blank"
+                >
+                  <BsGithub />
+                </a>
+                <a
+                  href="https://sanduranga.github.io/e_commerce_site_ts/"
+                  target="blank"
+                >
+                  <FaLink />
+                </a>
               </div>
-              <div className="flex justify-end">
-                <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">
-                  <a
-                    href="https://github.com/Sanduranga/e_commerce_site_ts"
-                    target="blank"
-                  >
-                    <BsGithub />
-                  </a>
-                  <a
-                    href="https://sanduranga.github.io/e_commerce_site_ts/"
-                    target="blank"
-                  >
-                    <FaLink />
-                  </a>
-                </div>
+            </div>
+          </div>
+        </Discription>
+      </Card>
+      <Card>
+        <img
+          src="./ecommercets.jpg"
+          alt="Featured Image 1"
+          className="shadow-lg shadow-black md:rounded-t-xl md:w-[40vw]  w-[90vw] max-h-[50vh] mx-auto object-cover"
+        />
+        <Discription>
+          <div className="space-y-4">
+            <h3 className="sm:text-xl text-md font-bold">Android App</h3>
+            <div className="sm:text-lg text-sm">
+              This is my first mobile app. And also I used Redux Toolkit to
+              manage and maintain the application state. Also Picsum free API
+              used to fetch images as store items. Dark mode Light mode are also
+              available in this app.
+            </div>
+          </div>
+          <div className="flex justify-between sm:pt-8 pt-0 items-center sm:flex-row flex-col-reverse">
+            <div className="flex flex-col gap-y-1">
+              <Tools>React Native</Tools>
+              <Tools>Redux (Toolkit)</Tools>
+              <Tools>Form Handeling</Tools>
+            </div>
+            <div className="flex flex-col justify-end">
+              <div className="flex gap-2 sm:y-0 my-3 pr-2 sm:text-2xl text-md justify-between items-center text-primary-200 paragraph-m rounded-full">
+                <a
+                  href="https://github.com/Sanduranga/react_nativep1"
+                  target="blank"
+                >
+                  <BsGithub />
+                </a>
+                <a
+                  href="https://github.com/Sanduranga/react_nativep1"
+                  target="blank"
+                >
+                  <BsGithub />
+                </a>
               </div>
             </div>
           </div>
@@ -89,25 +142,28 @@ const ProjectSection = () => {
         <img
           src="./ecommercejs.jpg"
           alt="Featured Image 1"
-          className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
+          className="shadow-lg shadow-black md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
         <Discription>
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">E-commerce site(js)</h3>
-            <div className="md:text-lg ">
-              This is a simple e commerce web site(Javasript) using Picsum free
-              API images as the items. Also I used Redux createStore to manage
-              the global store.
+            <h3 className="sm:text-xl text-md font-bold">
+              E-commerce site(js)
+            </h3>
+            <div className="sm:text-lg  text-sm">
+              This is an e commerce web site(Javasript) using Picsum free API
+              images as the items. Also I used Redux createStore to manage the
+              application state.
             </div>
           </div>
-          <div className="flex justify-between pt-8 items-center">
-            <div className="flex flex-col gap-y-2.5">
+          <div className="sm:flex-row flex-col-reverse flex justify-between sm:pt-8 pt-0 items-center">
+            <div className="flex flex-col gap-y-1">
               <Tools>React</Tools>
               <Tools>Redux</Tools>
               <Tools>Rest API</Tools>
+              <Tools>TailwindCSS</Tools>
             </div>
             <div className="flex flex-col justify-end">
-              <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">
+              <div className="flex sm:my-0 my-2 gap-2 pr-2 sm:text-2xl text-md justify-between items-center text-primary-200 paragraph-m rounded-full ">
                 <a
                   href="https://github.com/Sanduranga/e_commerce_site_react_redux.git"
                   target="blank"
@@ -129,24 +185,26 @@ const ProjectSection = () => {
         <img
           src="./framermotion.jpg"
           alt="Featured Image 1"
-          className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
+          className="shadow-lg shadow-black rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
         />
         <Discription>
           <div className="space-y-4">
-            <h3 className="text-xl font-bold ">Animate webpage</h3>
-            <div className="md:text-lg ">
-              Here I made simple attractive animate page using Framer motion.
+            <h3 className="sm:text-xl text-md font-bold ">Animate webpage</h3>
+            <div className="sm:text-lg  text-sm">
+              Here I made an attractive animate page using Framer motion.
             </div>
           </div>
-          <div className="flex justify-between pt-8 items-center">
-            <div className="flex flex-col gap-y-2.5">
+          <div className="sm:flex-row flex-col-reverse flex justify-between sm:pt-8 pt-0 items-center ">
+            <div className="flex flex-col gap-y-1">
               <Tools>React</Tools>
-              <Tools>FramerMotion</Tools>
+              <Tools>Framer</Tools>
               <Tools>Typescript</Tools>
             </div>
             <div className="flex flex-col justify-end">
-              <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">
+              <div className="flex sm:my-0 my-2 gap-2 pr-2 sm:text-2xl text-md justify-between items-center text-primary-200 paragraph-m rounded-full">
                 <a
+                  sm:mb-0
+                  mb-5
                   href="https://github.com/Sanduranga/p8_attractive_homepage"
                   target="blank"
                 >
@@ -167,29 +225,29 @@ const ProjectSection = () => {
         <img
           src="./todoapp.jpg"
           alt="Featured Image 1"
-          className="md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
+          className="shadow-lg shadow-black md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
         <Discription>
-          <div className="space-y-4 ">
-            <h3 className="text-xl font-bold ">Todo app</h3>
-            <div className="md:md:text-lg text-md ">
-              This is a simple Todo app with redux. I used Jsonplaceholder free
-              API to Get, Delete, Update and Post the data. 1st you need to
-              enter your ID and then enter your Task ID. Both must be numbers.
-              Once you're done, another input field will appear. Then you can
-              write your work. Then finally Submit button will appear. Also can
+          <div className="space-y-4">
+            <h3 className="sm:text-xl text-md font-bold ">Todo app</h3>
+            <div className="md:text-lg text-sm ">
+              This is a Todo app with redux. I used Jsonplaceholder free API to
+              Get, Delete, Update and Post the data. 1st you need to enter your
+              ID and then enter your Task ID. Both must be numbers. Once you're
+              done, Task input field will appear. Then you can write your work.
+              Then finally Submit button will appear and can submit. Also can
               delete and edit the task
             </div>
           </div>
-          <div className="flex justify-between pt-8 items-center">
-            <div className="flex flex-col gap-y-2.5">
+          <div className="sm:flex-row flex-col-reverse flex justify-between sm:pt-8 pt-0 items-center">
+            <div className="flex flex-col gap-y-1">
               <Tools>React</Tools>
-              <Tools>Redux(createStore)</Tools>
+              <Tools>Redux</Tools>
               <Tools>CRUD Operation</Tools>
               <Tools>Form Handeling</Tools>
             </div>
             <div className="flex flex-col justify-end">
-              <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">
+              <div className="flex sm:my-0 my-2 gap-2 pr-2 sm:text-2xl text-md  justify-between items-center text-primary-200 paragraph-m  rounded-full">
                 <a
                   href="https://github.com/Sanduranga/todo_react_redux_app"
                   target="blank"
@@ -211,28 +269,30 @@ const ProjectSection = () => {
         <img
           src="./ceylonguider.jpg"
           alt="Featured Image 1"
-          className="rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
+          className="shadow-lg shadow-black rounded-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto"
         />
         <Discription>
           <div className="space-y-4">
-            <h3 className="text-xl font-bold ">Web Page</h3>
-            <div className="md:text-lg ">
+            <h3 className="sm:text-xl text-md font-bold ">Web Page</h3>
+            <div className="sm:text-lg  text-sm">
               This is simple webpage and my first web page. Here I used basic
               Form handeling techniques and CSS techniques. I developed thre
-              pages. My purpose of making this is to guide those who want to
+              pages. My purpose of making this was to guide those who want to
               travel in Sri Lanka so that they can use this website to find
-              their needs.
+              their needs without guiders. I have developed three pages so far.
             </div>
           </div>
-          <div className="flex justify-between pt-8 items-center">
-            <div className="flex flex-col gap-y-2.5">
+          <div className="sm:flex-row flex-col-reverse flex justify-between sm:pt-8 pt-0 items-center">
+            <div className="flex flex-col gap-y-1">
               <Tools>React</Tools>
               <Tools>React Router</Tools>
               <Tools>Form Handeling</Tools>
             </div>
             <div className="flex flex-col justify-end">
-              <div className="flex gap-5 px-5 text-2xl  justify-between items-center text-primary-200 paragraph-m  rounded-full">
+              <div className="flex gap-2 pr-2 sm:text-2xl sm:my-0 my-2 text-md justify-between items-center text-primary-200 paragraph-m rounded-full">
                 <a
+                  sm:mb-0
+                  mb-5
                   href="https://github.com/Sanduranga/CeylonGuiderReactJS"
                   target="blank"
                 >

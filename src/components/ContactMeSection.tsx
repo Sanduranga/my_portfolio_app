@@ -48,24 +48,24 @@ const ContactMeSection = () => {
   };
 
   return (
-    <div className=" bg-hash1 w-full min-h-screen">
+    <div className=" bg-hash1 w-full min-h-screen grid justify-items-center sm:-mt-10 -mt-4">
       <Amaze>
         <h1
           id="contact_me_section"
-          className="py-4 w-fit h-fit text-2xl mx-auto font-bold text-center md:mb-10 md:mt-12 mt-20 text-black"
+          className="shadow-lg shadow-black rounded-sm p-4 w-fit h-fit text-2xl font-bold text-center mb-10 sm:mt-12 mt-10 text-black"
         >
           Drop me a message..
         </h1>
       </Amaze>
 
-      <div className="grid grid-cols-autofit md:mx-20 mb-10 mx-5 gap-2">
+      <div className="grid grid-cols-autofit w-full sm:px-20 mb-10 px-5 gap-2">
         <img
-          className="md:w-[25vw] md:h-[50vh] w-[50vw] h-[35vh] mx-auto object-cover rounded-3xl"
+          className="sm:w-[25vw] sm:h-[50vh] w-[50vw] h-[35vh] mx-auto object-cover rounded-3xl"
           src="./typinggirl.gif"
           alt="gif"
         />
 
-        <div className="bg-gray-800/70 rounded-md md:p-10 p-3">
+        <div className="bg-gray-800/70 rounded-sm sm:p-10 p-3 shadow-xl shadow-black">
           <div className="flex text-amber-500 items-center mb-5">
             <h1 className="text-lg mt-1">
               <AiOutlineMail />
@@ -78,7 +78,7 @@ const ContactMeSection = () => {
             onSubmit={(e) => sendEmail(e)}
           >
             <Form
-              className="flex flex-col font-mono text-sm bg-white rounded-md p-3 "
+              className="flex flex-col font-mono text-sm bg-white rounded-sm p-3 "
               ref={formRef}
             >
               <label className="text-black font-bold">Name</label>
