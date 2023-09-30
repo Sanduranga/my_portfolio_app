@@ -99,7 +99,7 @@ const ProjectSection = () => {
       </Card>
       <Card>
         <img
-          src="./ecommercets.jpg"
+          src="./nativeapp.jpg"
           alt="Featured Image 1"
           className="shadow-lg shadow-black md:rounded-t-xl md:w-[40vw]  w-[90vw] max-h-[50vh] mx-auto object-cover"
         />
