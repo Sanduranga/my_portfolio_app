@@ -31,10 +31,10 @@ const ContactMeSection = () => {
     if (formRef.current) {
       emailjs
         .sendForm(
-          "service_8qb7aiu",
-          "template_8bof99d",
+          "service_a01ln1t",
+          "template_o1890mc",
           formRef.current, // Pass the form element here
-          "VkV6Ag43Otk2IrZ2E"
+          "NdHfPFC3lgRptACI8"
         )
         .then(
           () => {
