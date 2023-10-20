@@ -10,11 +10,17 @@ import { GrDocumentPdf } from "@react-icons/all-files/gr/GrDocumentPdf";
 
 const LandingSection = () => {
   const [typeEffect] = useTypewriter({
-    words: ["ReactJS❤️‍🔥", "Redux😇", "TailwindCSS🥰", "Typescript💪"],
+    words: [
+      "ReactJS❤️‍🔥",
+      "Redux😇",
+      "TailwindCSS🥰",
+      "Typescript💪",
+      "NextJS👌",
+    ],
     // @ts-expect-error
     loop: {},
-    typeSpeed: 100,
-    deleteSpeed: 40,
+    typeSpeed: 50,
+    deleteSpeed: 30,
   });
   return (
     <div className="min-h-[100vh] grid grid-cols-1 gap-10 justify-items-center w-full bg-gradient-to-b from-gray-100 to-gray-950 ">
@@ -36,13 +42,14 @@ const LandingSection = () => {
                 duration: 1,
               },
             }}
-            className="absolute sm:right-0 -bottom-28 sm:top-0 cursor-pointer hover:scale-105"
+            className="absolute sm:right-0 -bottom-28 sm:top-0 h-20"
           >
             <div
               onClick={() => {
                 const pdfUrl = "./STEdirisingheCV.pdf";
                 saveAs(pdfUrl, "ST Edirisinghe CV.pdf");
               }}
+              className="cursor-pointer hover:scale-105"
             >
               <h1 className="bg-white py-3 rounded-full text-3xl flex justify-center">
                 <GrDocumentPdf />
