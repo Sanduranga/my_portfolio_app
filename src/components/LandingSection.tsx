@@ -94,6 +94,63 @@ const LandingSection = () => {
           journey to become a full-stack developer.
         </h1>
       </Amaze>
+      <div>
+        <div className="w-[70vw] sm:w-[60vw] h-[8vh] md:h-[20vh] flex mx-auto justify-between items-center">
+          <img
+            className="w-12 h-12 md:w-24 md:h-24 shadow-2xl rounded-xl p-2"
+            src="technologies/pngwing.com (1).png"
+            alt="Firebase"
+          />
+          <img
+            className="w-12 h-12 md:w-24 md:h-24 shadow-2xl rounded-xl p-2"
+            src="technologies/pngwing.com (2).png"
+            alt="Firebase"
+          />
+          <img
+            className="w-12 h-12 md:w-24 md:h-24 shadow-2xl rounded-xl p-2"
+            src="technologies/pngwing.com (3).png"
+            alt="Firebase"
+          />
+          <img
+            className="w-12 h-12 md:w-24 md:h-24 shadow-2xl rounded-xl p-2"
+            src="technologies/pngwing.com (4).png"
+            alt="Firebase"
+          />
+          <img
+            className="w-12 h-12 md:w-24 md:h-24 shadow-2xl rounded-xl p-2"
+            src="technologies/pngwing.com (5).png"
+            alt="Firebase"
+          />
+        </div>
+        <div className="w-[70vw] sm:w-[60vw] h-[8vh] md:h-[20vh] flex mx-auto justify-between items-center">
+          <img
+            className="w-12 h-12 md:w-28 md:h-24 shadow-2xl rounded-xl p-2"
+            src="technologies/pngwing.com (6).png"
+            alt="Firebase"
+          />
+          <img
+            className="w-12 h-12 md:w-24 md:h-24 shadow-2xl rounded-xl p-2"
+            src="technologies/pngwing.com (7).png"
+            alt="Firebase"
+          />
+          <img
+            className="w-12 h-12 md:w-24 md:h-24 shadow-2xl rounded-xl p-2"
+            src="technologies/pngwing.com (8).png"
+            alt="Firebase"
+          />
+          <img
+            className="w-12 h-12 md:w-24 md:h-24 shadow-2xl rounded-xl p-2"
+            src="technologies/pngwing.com (9).png"
+            alt="Firebase"
+          />
+          <img
+            className="w-12 h-12 md:w-24 md:h-24 shadow-2xl rounded-xl p-2"
+            src="technologies/pngwing.com (10).png"
+            alt="Firebase"
+          />
+        </div>
+      </div>
+
       <Amaze>
         <img
           src="darklight.gif"
