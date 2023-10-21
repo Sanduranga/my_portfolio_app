@@ -19,8 +19,9 @@ const LandingSection = () => {
     ],
     // @ts-expect-error
     loop: {},
-    typeSpeed: 50,
+    typeSpeed: 100,
     deleteSpeed: 30,
+    delaySpeed: 1000,
   });
   return (
     <div className="min-h-[100vh] grid grid-cols-1 gap-10 justify-items-center w-full bg-gradient-to-b from-gray-100 to-gray-950 ">
