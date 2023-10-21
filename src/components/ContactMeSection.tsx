@@ -4,6 +4,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Amaze from "./Amaze";
+import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 
 const validationSchema = Yup.object().shape({
   sender_name: Yup.string().required("Required"),
@@ -66,11 +67,18 @@ const ContactMeSection = () => {
         />
 
         <div className="bg-gray-800/70 rounded-sm sm:p-10 p-3 shadow-xl shadow-black">
-          <div className="flex text-amber-500 items-center mb-5">
+          <div className="flex justify-between text-amber-500 items-center mb-5">
             <h1 className="text-lg mt-1">
-              <AiOutlineMail />
+              <AiOutlineMail /> sandurangatd@gmail.com
             </h1>
-            <h1 className="text-lg ml-2">sandurangatd@gmail.com</h1>
+            <div>
+              <a
+                target="blank"
+                href="https://wa.me/+94702330959?text=I'm%20interested%20in%20your%20developments"
+              >
+                <AiOutlineWhatsApp size={30} />
+              </a>
+            </div>
           </div>
           <Formik
             initialValues={initialValues}

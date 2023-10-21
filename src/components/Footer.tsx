@@ -4,7 +4,7 @@ import { AiOutlineWhatsApp } from "@react-icons/all-files/ai/AiOutlineWhatsApp";
 
 const Footer = () => {
   return (
-    <div className="flex flex-wrap justify-evenly items-center text-white text-lg font-mono w-full h-[30vh] bg-gradient-to-b from-gray-950/80 to-amber-200/40">
+    <div className="flex flex-col justify-center gap-3 items-center text-white text-lg font-mono w-full h-[30vh] bg-gradient-to-b from-gray-950/80 to-amber-200/40">
       <div className="flex w-20 justify-between gap-5">
         <a
           href="https://www.linkedin.com/in/sanduranaga-edirisinghe/"
@@ -17,12 +17,12 @@ const Footer = () => {
         </a>
         <a
           target="blank"
-          href="https://wa.me/15551234567?text=I'm%20interested%20in%20your%20developments"
+          href="https://wa.me/+94702330959?text=I'm%20interested%20in%20your%20developments"
         >
           <AiOutlineWhatsApp size={30} />
         </a>
       </div>
-      @sranga 2023
+      <div>@SRanga Technologies 2023</div>
     </div>
   );
 };
