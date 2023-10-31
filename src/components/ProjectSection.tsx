@@ -10,7 +10,7 @@ interface propType {
 const Card = (props: propType) => {
   return (
     <Amaze>
-      <div className="grid sm:grid-cols-autofit sm:h-[65vh] h-[50vh] mt-5 text-black shadow-lg shadow-black bg-slate-400 font-sans sm:p-7 p-2 rounded-xl overflow-hidden">
+      <div className="grid sm:grid-cols-autofit sm:h-[65vh] h-[70vh] mt-5 text-black shadow-lg shadow-black bg-slate-400 font-sans sm:p-7 p-2 rounded-xl overflow-hidden">
         {props.children}
       </div>
     </Amaze>
@@ -44,7 +44,7 @@ const Tools = (props: propType) => {
 
 const ProjectSection = () => {
   return (
-    <div className="relative grid sm:grid-cols-autofit grid-cols-2 gap-5 w-full sm:p-10 px-3">
+    <div className="relative grid sm:grid-cols-autofit grid-cols-1 md:grid-cols-3 gap-5 w-full sm:p-10 px-3">
       <img
         src="./metrics.gif"
         alt=""
