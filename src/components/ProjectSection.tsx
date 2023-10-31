@@ -140,6 +140,54 @@ const ProjectSection = () => {
       </Card>
       <Card>
         <img
+          src="./teachersite.jpg"
+          alt="Featured Image 1"
+          className="shadow-lg shadow-black md:rounded-t-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
+        />
+        <Discription>
+          <div className="space-y-4 ">
+            <h3 className="sm:text-xl text-md font-bold">
+              Personal web app(NextJs)
+            </h3>
+            <div className="sm:text-lg text-sm">
+              This is a personal web site that I am developing by NextJS React
+              framework. In this, I used many technologies such as Redux
+              toolkit, Mongoose and MongoDB. I used Redux Toolkit to manage and
+              maintain the application state. Also I used to Mongoose to connect
+              MongoDB and fetch data. By Mongoose I made two models so that it
+              can be allow to tutor to provide their details and provide their
+              students details. My goal is to develop this app to be suitable
+              for a tutor.
+            </div>
+          </div>
+          <div className="sm:flex-row mt-0 flex-col-reverse flex justify-between sm:pt-8 pt-0 items-center">
+            <div className="flex flex-col gap-y-1">
+              <Tools>NextJs</Tools>
+              <Tools>Redux (Toolkit)</Tools>
+              <Tools>Mongoose</Tools>
+              <Tools>Typescript</Tools>
+              <Tools>Rest API</Tools>
+              <Tools>TailwindCSS</Tools>
+            </div>
+
+            <div className="flex justify-end">
+              <div className="flex sm:my-0 my-2 gap-2 pr-2 sm:text-2xl text-md justify-between items-center text-primary-200 paragraph-m rounded-full">
+                <a
+                  href="https://github.com/Sanduranga/teacher_site_nextjs.git"
+                  target="blank"
+                >
+                  <BsGithub />
+                </a>
+                <a href="##" target="blank">
+                  <FaLink />
+                </a>
+              </div>
+            </div>
+          </div>
+        </Discription>
+      </Card>
+      <Card>
+        <img
           src="./ecommercejs.jpg"
           alt="Featured Image 1"
           className="shadow-lg shadow-black md:rounded-xl rounded-b-xl md:w-[40vw] w-[90vw] max-h-[50vh] mx-auto object-cover"
