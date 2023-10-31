@@ -60,7 +60,7 @@ const ProjectSection = () => {
         <Discription>
           <div className="space-y-4 ">
             <h3 className="sm:text-xl text-md font-bold">
-              E-commerce site(ts & toolkit)
+              E-commerce web app(ts & toolkit)
             </h3>
             <div className="sm:text-lg text-sm">
               This is an e_commerce site in Typescript version. And also I used
@@ -195,7 +195,7 @@ const ProjectSection = () => {
         <Discription>
           <div className="space-y-4">
             <h3 className="sm:text-xl text-md font-bold">
-              E-commerce site(js)
+              E-commerce web app(js)
             </h3>
             <div className="sm:text-lg  text-sm">
               This is an e commerce web site(Javasript) using Picsum free API
