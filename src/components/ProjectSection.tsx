@@ -150,14 +150,12 @@ const ProjectSection = () => {
               Personal web app(NextJs)
             </h3>
             <div className="sm:text-lg text-sm">
-              This is a personal web site that I am developing by NextJS React
-              framework. In this, I used many technologies such as Redux
-              toolkit, Mongoose and MongoDB. I used Redux Toolkit to manage and
-              maintain the application state. Also I used to Mongoose to connect
-              MongoDB and fetch data. By Mongoose I made two models so that it
-              can be allow to tutor to provide their details and provide their
-              students details. My goal is to develop this app to be suitable
-              for a tutor.
+              This is a personal web site still under development. I am
+              developing by NextJS React framework. In this, Also I used to
+              Mongoose to connect MongoDB and Javascript native fetch API as
+              REST API client. By Mongoose I made 8 models. By this time, I
+              deployed this by using Netlify cloud computing platform and you
+              can access ussing below link.
             </div>
           </div>
           <div className="sm:flex-row mt-0 flex-col-reverse flex justify-between sm:pt-8 pt-0 items-center">
@@ -178,7 +176,7 @@ const ProjectSection = () => {
                 >
                   <BsGithub />
                 </a>
-                <a href="##" target="blank">
+                <a href="https://wadumaduwa.netlify.app/" target="blank">
                   <FaLink />
                 </a>
               </div>
