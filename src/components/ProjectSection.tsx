@@ -161,7 +161,6 @@ const ProjectSection = () => {
           <div className="sm:flex-row mt-0 flex-col-reverse flex justify-between sm:pt-8 pt-0 items-center">
             <div className="flex flex-col gap-y-1">
               <Tools>NextJs</Tools>
-              <Tools>Redux (Toolkit)</Tools>
               <Tools>Mongoose</Tools>
               <Tools>Typescript</Tools>
               <Tools>Rest API</Tools>
