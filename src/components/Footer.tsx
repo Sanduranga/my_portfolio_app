@@ -22,7 +22,7 @@ const Footer = () => {
           <AiOutlineWhatsApp size={30} />
         </a>
       </div>
-      <div>@SRanga Technologies 2023</div>
+      <div>@SRanga Technologies 2024</div>
     </div>
   );
 };
